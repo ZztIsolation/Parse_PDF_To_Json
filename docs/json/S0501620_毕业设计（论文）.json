@@ -1,0 +1,282 @@
+{
+  "file_name": "118_毕业设计（论文）教学大纲.md",
+  "processed_at": "2025-11-08 19:09:11",
+  "course_name": "毕业设计（论文）",
+  "course_code": "S0501620",
+  "course_goals": {
+    "overview": "毕业设计是本专业本科学生在校学习期间最后一个综合性实践教学环节，具有十分重要的地位。其目标是培养学生独立的综合运用所学基础理论、专业知识和基本技能的能力，培养学生分析问题和解决实际问题的能力，使学生得到项目开发完整过程的初步训练，综合检验学生所学知识和技能，以完成学生从学习岗位到工作岗位的初步过渡。通过毕业设计，引导学生树立投身科学研究和技术创新的远大理想，培养学生尊师重道、敬业精神、职业道德和法制观念，激发学生强烈的使命感和社会责任心。",
+    "goals": [
+      {
+        "number": "1",
+        "content": "能够围绕所选课题，独立完成文献搜集及分析研究、项目调研及需求分析，对比国内外技术现状，引导学生树立投身科学研究和技术创新的远大理想，激发学生强烈的使命感和责任心；"
+      },
+      {
+        "number": "2",
+        "content": "能够综合运用现有编程工具，部署集成开发环境，并提出初步系统框架和工作思路，在教师及前人工作的指导下完成系统设计、系统实现及调试；在系统设计及实现过程中能够考虑实现的可行性、理解现代工具和开发环境的局限性；"
+      },
+      {
+        "number": "3",
+        "content": "在项目进行过程中，能够合理掌控进度安排，按时完成毕业设计各项工作；"
+      },
+      {
+        "number": "4",
+        "content": "能够在项目执行过程中发现自身知识和技能方面的不足，并及时通过自学弥补并掌握相关能力；"
+      },
+      {
+        "number": "5",
+        "content": "恪守学术规范和相关规定，了解计算机工程领域的相关技术标准、法律法规、知识产权，培养职业道德和法制观念，能运用适当的文字撰写开题报告、文献综述和毕业论文等；"
+      },
+      {
+        "number": "6",
+        "content": "能够在答辩中合理描述项目的进展、设计思路、实现方法和成果，并能回答答辩组提出的各种问题。"
+      }
+    ]
+  },
+  "requirement_mappings": [
+    {
+      "table_title": "表1 计算机科学与技术课程目标与毕业要求对应关系",
+      "major": "计算机科学与技术",
+      "mappings": [
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析：具备文献检索能力，能够对计算机领域的复杂工程问题进行调查、研究分析。",
+          "indicator": "2-2 具备文献检索能力，能够对计算机领域的复杂工程问题进行调查、研究分析。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析：具备文献检索能力，能够对计算机领域的复杂工程问题进行调查、研究分析。",
+          "indicator": "2-3 能够在识别、表达、分析的基础上，利用科学思维方法合理推导出有效结论。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究：能够运用计算机专业知识，设计计算机领域复杂工程问题的系统解决方案。",
+          "indicator": "3-3 能够运用计算机专业知识，设计计算机领域复杂工程问题的系统解决方案。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究：能够运用计算机专业知识，设计计算机领域复杂工程问题的系统解决方案。",
+          "indicator": "3-4 能够在设计环节中体现创新意识。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究：能够运用计算机专业知识，设计计算机领域复杂工程问题的系统解决方案。",
+          "indicator": "3-5 能够在设计环节中考虑社会、健康、安全、法律、文化以及环境等因素。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "4",
+          "requirement": "职业规范：能够运用计算机科学原理与方法，对计算机领域复杂工程问题进行研究分析。",
+          "indicator": "4-1 能够运用计算机科学原理与方法，对计算机领域复杂工程问题进行研究分析。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通：能够就计算机领域的复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "indicator": "10-1 能够就计算机领域的复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通：能够就计算机领域的复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "indicator": "10-2 了解计算机技术国际研究前沿，能够就计算机领域的复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "11",
+          "requirement": "项目管理：能够在多学科环境的设计开发中，运用工程管理和经济决策方法。",
+          "indicator": "11-2 能够在多学科环境的设计开发中，运用工程管理和经济决策方法。",
+          "course_goals": "4"
+        }
+      ]
+    },
+    {
+      "table_title": "表2 软件工程课程目标与毕业要求对应关系",
+      "major": "软件工程",
+      "mappings": [
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析：具备文献检索能力，能够对软件工程领域复杂工程问题进行调查、研究分析。",
+          "indicator": "2-2 具备文献检索能力，能够对软件工程领域复杂工程问题进行调查、研究分析。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析：具备文献检索能力，能够对软件工程领域复杂工程问题进行调查、研究分析。",
+          "indicator": "2-3 能够在识别、表达、分析的基础上，利用科学思维方法合理推导出有效结论。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "设计/开发解决方案：能够运用软件工程专业知识，设计软件工程领域复杂工程问题的系统解决方案。",
+          "indicator": "3-2 能够运用软件工程专业知识，设计软件工程领域复杂工程问题的系统解决方案。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "设计/开发解决方案：能够运用软件工程专业知识，设计软件工程领域复杂工程问题的系统解决方案。",
+          "indicator": "3-3 能够在设计环节中体现创新意识。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "设计/开发解决方案：能够运用软件工程专业知识，设计软件工程领域复杂工程问题的系统解决方案。",
+          "indicator": "3-4 能够在设计环节中考虑社会、健康、安全、法律、文化以及环境等因素。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "4",
+          "requirement": "研究：能够运用包括计算学科在内的科学原理与方法，对软件工程领域复杂工程问题进行研究分析。",
+          "indicator": "4-1 能够运用包括计算学科在内的科学原理与方法，对软件工程领域复杂工程问题进行研究分析。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通：能够就软件工程领域复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "indicator": "10-1 能够就软件工程领域复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通：能够就软件工程领域复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "indicator": "10-2 了解软件工程技术国际研究前沿，能够就软件工程领域复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "11",
+          "requirement": "项目管理：能够在多学科环境的设计开发中，进行工程管理和经济决策。",
+          "indicator": "11-2 能够在多学科环境的设计开发中，进行工程管理和经济决策。",
+          "course_goals": "4"
+        }
+      ]
+    },
+    {
+      "table_title": "表3 计算机科学与技术（第二学士学位）课程目标与毕业要求对应关系",
+      "major": "计算机科学与技术（第二学士学位）",
+      "mappings": [
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析",
+          "indicator": "2-2 具备文献检索能力，能够对计算机领域的复杂工程问题进行调查、研究分析。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析",
+          "indicator": "2-3 能够在识别、表达、分析的基础上，利用科学思维方法合理推导出有效结论。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-3 能够运用计算机专业知识，设计计算机领域复杂工程问题的系统解决方案。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-4 能够在设计环节中体现创新意识。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-5 能够在设计环节中考虑社会、健康、安全、法律、文化以及环境等因素。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "4",
+          "requirement": "职业规范",
+          "indicator": "4-1 能够运用计算机科学原理与方法，对计算机领域复杂工程问题进行研究分析。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通",
+          "indicator": "10-1能够就计算机领域的复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通",
+          "indicator": "10-2了解计算机技术国际研究前沿，能够就计算机领域的复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "11",
+          "requirement": "项目管理",
+          "indicator": "11-2能够在多学科环境的设计开发中，运用工程管理和经济决策方法。",
+          "course_goals": "4"
+        }
+      ]
+    },
+    {
+      "table_title": "表 **4** 计算机科学与技术 **(** 计算机科学英才班 **)** 课程目标与毕业要求对应关系",
+      "major": "计算机科学与技术（计算机科学英才班）",
+      "mappings": [
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析",
+          "indicator": "2-2 具备文献检索能力，能够对计算机领域的复杂工程问题进行调查、研究分析。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "2",
+          "requirement": "问题分析",
+          "indicator": "2-3 能够在识别、表达、分析的基础上，利用科学思维方法合理推导出有效结论。",
+          "course_goals": "1、2"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-3 能够运用计算机专业知识，设计计算机相关领域复杂工程问题的整体解决方案。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-4 能够在设计环节中体现创新意识。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "3",
+          "requirement": "研究",
+          "indicator": "3-5 能够在设计环节中考虑社会、健康、安全、法律、文化以及环境等因素。",
+          "course_goals": "3"
+        },
+        {
+          "requirement_number": "4",
+          "requirement": "职业规范",
+          "indicator": "4-1 能够运用计算机科学原理与方法，对计算机领域复杂工程问题进行研究分析。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通",
+          "indicator": "10-1能够就计算机复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "沟通",
+          "indicator": "10-2了解计算机技术国际研究前沿，能够就计算机领域的复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "5"
+        },
+        {
+          "requirement_number": "11",
+          "requirement": "项目管理",
+          "indicator": "11-2能够在多学科环境下进行工程管理和经济决策。",
+          "course_goals": "4"
+        }
+      ]
+    }
+  ],
+  "course_relations": {
+    "prerequisite_courses": [],
+    "subsequent_courses": [],
+    "description": "本章节未明确提及先修或后续课程，仅说明了与其他课程的关系：本课程与中国近现代史纲要、思想道德修养与法律基础、毛泽东思想和中国特色社会主义理论体系概论以及马克思主义基本原理概论课程互为支撑，共同协作，以达成教学目标的要求。"
+  }
+}

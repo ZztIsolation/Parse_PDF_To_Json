@@ -1,7 +1,7 @@
 """
-PDF分割工具 - 按具体课程分割(只保留前3页)
+PDF分割工具 - 按具体课程分割
 将PDF按二级书签(具体课程名称)分割成多个小PDF文件
-每个课程只保留前3页(课程目标、毕业要求对应关系、教学内容概览)
+保留每个课程的完整内容
 """
 
 from pypdf import PdfReader, PdfWriter
@@ -132,13 +132,10 @@ def split_pdf_by_level1_bookmarks(pdf_path: str, output_dir: str) -> None:
         output_path = os.path.join(output_dir, output_filename)
         
         try:
-            # 只保留前3页
-            actual_end_page = min(start_page + 2, end_page)  # 前3页: start_page, start_page+1, start_page+2
-            actual_page_count = actual_end_page - start_page + 1
-
+            # 保留所有页面
             # 创建新PDF
             writer = PdfWriter()
-            for page_num in range(start_page, actual_end_page + 1):
+            for page_num in range(start_page, end_page + 1):
                 writer.add_page(reader.pages[page_num])
 
             # 保存
@@ -146,7 +143,7 @@ def split_pdf_by_level1_bookmarks(pdf_path: str, output_dir: str) -> None:
                 writer.write(output_file)
 
             print(f"✅ [{i+1}/{len(level1_bookmarks)}] {output_filename}")
-            print(f"    页码: {start_page+1}-{actual_end_page+1} (共 {actual_page_count} 页, 原始 {page_count} 页)")
+            print(f"    页码: {start_page+1}-{end_page+1} (共 {page_count} 页)")
             success_count += 1
             
         except Exception as e:

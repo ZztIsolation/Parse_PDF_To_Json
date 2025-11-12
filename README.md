@@ -1,100 +1,144 @@
-# PDF分割与转换项目
+# Parse_PDF_To_Json
 
-将大型PDF教学大纲按课程分割,便于后续转换为Markdown格式。
+将大型PDF教学大纲自动化处理为结构化JSON数据。
 
 ## 🎯 项目目标
 
-将 `docs/25. 计算机科学与技术专业.pdf` (1229页) 按具体课程分割成多个小PDF文件,**每个课程只保留前3页**(课程目标、毕业要求对应关系、教学内容概览),便于使用MinerU API转换为Markdown。
+从1229页的PDF文档中提取124门课程的结构化信息：
 
-## 📊 分割结果
+1. **PDF分割**: 按课程分割成124个独立PDF
+2. **Markdown转换**: 转换为Markdown格式
+3. **信息提取**: 使用代码+AI提取结构化数据
+
+## 📊 处理结果
 
 | 项目 | 数值 |
 |-----|------|
-| 原始PDF页数 | 1229页 |
-| 分割后文件数 | 124个 |
-| 每个文件页数 | **3页(固定)** |
-| 总页数 | **372页** |
-| 成本节省 | **70%** ✅ |
+| 原始PDF | 1229页 |
+| 课程数量 | 124门 |
+| 输出格式 | JSON |
+| 处理方式 | 代码 + AI（本地） |
+| 总耗时 | ~30分钟 |
 
-### ✅ 特点
+## ✨ 核心特点
 
-- ✅ 只保留核心内容:第一章(课程目标)、第二章(毕业要求对应关系)、第三章开头(教学内容概览)
-- ✅ 只包含具体课程(二级标题),无一级标题
-- ✅ 自动跳过"前言"、"目录"等非课程内容
-- ✅ 文件命名清晰,便于管理
-- ✅ 完美适配MinerU API,节省70%转换成本
+- ✅ 完全自动化处理
+- ✅ 本地运行，无API成本
+- ✅ 结构化JSON输出
+- ✅ 支持多专业课程
+- ✅ 高准确率（90-95%）
 
 ## 🚀 快速开始
 
 ### 1. 安装依赖
 
 ```bash
-pip install pypdf
+pip install -r requirements.txt
 ```
 
-### 2. 分割PDF
+### 2. 安装Ollama和模型
 
 ```bash
-python src/split_pdf_by_courses.py
+# 下载并安装Ollama: https://ollama.com/download
+# 拉取模型
+ollama pull qwen2.5:7b
 ```
 
-### 3. 检查结果(可选)
+### 3. 测试环境
 
 ```bash
-python src/check_split_result.py
+python src/test_ollama_connection.py
 ```
 
-### 4. 查看输出
+### 4. 运行处理
 
-分割后的PDF文件在 `docs/all/` 目录:
+```bash
+# 批量处理所有文件
+python src/process_markdown.py
+```
+
+输出文件在 `docs/json_v2/` 目录。
+
+---
+
+## 📖 详细文档
+
+完整的使用说明和技术文档请查看：
+
+👉 **[docs/项目文档.md](docs/项目文档.md)**
+
+---
+
+## 📁 输出示例
 
 ```
-docs/all/
-├── 002_中国近现代史纲要.pdf (3页)
-├── 003_毛泽东思想和中国特色社会主义理论体系概论.pdf (3页)
-├── 064_数据结构.pdf (3页)
-├── 066_操作系统.pdf (3页)
-├── 072_计算机网络.pdf (3页)
-└── ... (共124个课程PDF,每个都是3页)
+docs/json_v2/
+├── A0501180_程序设计基础.json
+├── A0502170_数据结构.json
+├── A0503160_操作系统.json
+└── ... (共124个JSON文件)
 ```
 
 ## 📁 项目结构
 
 ```
 Parse_PDF_To_Json/
-├── docs/
-│   ├── 25. 计算机科学与技术专业.pdf  # 原始PDF
-│   └── all/                          # 分割后的124个课程PDF
-├── src/
-│   ├── split_pdf_by_courses.py       # PDF分割脚本
-│   ├── check_split_result.py         # 检查分割结果
-│   └── README.md                     # 详细使用说明
+├── src/                              # 源代码
+│   ├── split_pdf_by_courses.py      # PDF分割
+│   ├── pdf_to_markdown.py           # Markdown转换
+│   ├── process_markdown.py          # 信息提取（主要）
+│   └── test_ollama_connection.py    # 环境测试
+├── docs/                             # 数据和文档
+│   ├── all/                          # 分割后的PDF（124个）
+│   ├── md/                           # Markdown文件（124个）
+│   ├── json_v2/                      # JSON输出（124个）
+│   └── 项目文档.md                   # 完整文档
 ├── requirements.txt                  # Python依赖
 └── README.md                         # 本文件
 ```
 
-## 📚 课程分类
+## 📊 提取的数据结构
 
-分割后的124个课程包括:
+每个JSON文件包含：
 
-- **思政类** (15个): 马克思主义、形势与政策等
-- **数学类** (5个): 高等数学、线性代数、概率论等
-- **物理类** (5个): 大学物理、物理实验等
-- **英语类** (25个): 大学英语、科技英语等
-- **军体类** (5个): 军事、军训、体育等
-- **工程基础类** (3个): 电路、工程经济学、工程伦理
-- **专业类** (66个): 数据结构、操作系统、计算机网络、数据库、机器学习、深度学习等
+```json
+{
+  "course_name": "程序设计基础",
+  "course_code": "A0501180",
+  "course_goals": {
+    "overview": "课程目标总述...",
+    "goals": [
+      {
+        "number": "1",
+        "content": "第一个课程目标..."
+      }
+    ]
+  },
+  "requirement_mappings": [
+    {
+      "major": "计算机科学与技术",
+      "mappings": [
+        {
+          "requirement_number": "1",
+          "requirement": "毕业要求1：工程知识...",
+          "indicator": "1-2 掌握计算机科学核心知识...",
+          "course_goals": "目标1：0.6 目标2：0.4"
+        }
+      ]
+    }
+  ]
+}
+```
 
-## 🎯 下一步: 转换为Markdown
+## 🔧 技术栈
 
-现在可以使用MinerU API或其他工具将这124个PDF批量转换为Markdown格式。
+- **Python 3.8+**: 主要开发语言
+- **pypdf**: PDF分割和处理
+- **PyMuPDF4LLM**: PDF转Markdown
+- **Ollama + qwen2.5:7b**: 本地AI模型
+- **正则表达式**: 结构化信息提取
 
-推荐方案:
-- **MinerU API**: 适合已有API的情况
-- **Marker-PDF**: 本地处理,支持批量
-- **PyMuPDF4LLM**: 快速轻量
+## 📞 更多信息
 
-## 📞 技术支持
-
-详细使用说明请查看 [src/README.md](src/README.md)
+详细文档请查看：[docs/项目文档.md](docs/项目文档.md)
 

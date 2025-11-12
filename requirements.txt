@@ -4,6 +4,9 @@ pypdf>=4.0.0
 # PDF转Markdown
 pymupdf4llm>=0.0.1
 
+# Markdown内容处理 - AI模型
+ollama>=0.1.0
+
 # 如果需要进度条(可选)
 # tqdm>=4.66.0
 

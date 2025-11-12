@@ -1,0 +1,142 @@
+{
+  "file_name": "111_毕业实习.md",
+  "processed_at": "2025-11-08 19:04:44",
+  "course_name": "毕业实习",
+  "course_code": "S0500740",
+  "course_goals": {
+    "overview": "为了促进学生解决复杂工程问题能力及综合实践能力的提升，使学生能够通过接触一线生产实际，将工程知识运用能力、分析问题和解决问题的能力融会贯通，特设置毕业实习。根据学生和企业的双向选择，让学生进入实习实践基地或其他就业目标单位，由企业导师指导进行针对性实训。通过本课程的学习，学生将会对复杂工程相关的能力掌握更为扎实，为将来就业带来实质性帮助。",
+    "goals": [
+      {
+        "number": "1",
+        "content": "能够在系统设计和实现的时候考虑到非技术因素并能良好地体现在解决方案中"
+      },
+      {
+        "number": "2",
+        "content": "能够在实习单位遵守各种规章制度，做好工作中的保密工作，具备良好的职业规范与道德"
+      },
+      {
+        "number": "3",
+        "content": "进行团队合作，能够良好地与领导和工作项目相关人员进行技术和非技术层面的沟通"
+      },
+      {
+        "number": "4",
+        "content": "具备完成各类技术和非技术文档的能力"
+      },
+      {
+        "number": "5",
+        "content": "对于实习过程中开发或应用的计算机工程应用软硬件，了解其与国际上处于领先地位的计算机工程应用软硬件相比的优劣势，从而激发学生科技报国的决心和信心"
+      }
+    ]
+  },
+  "requirement_mappings": [
+    {
+      "table_title": "课程目标与计算机科学与技术专业毕业要求对应关系",
+      "major": "计算机科学与技术",
+      "mappings": [
+        {
+          "requirement_number": "6",
+          "requirement": "毕业要求6：工程与社会",
+          "indicator": "6-2 能够理解在计算机工程实践中应承担的社会、健康、安全、法律以及文化责任。",
+          "course_goals": "目标1：1.0"
+        },
+        {
+          "requirement_number": "8",
+          "requirement": "毕业要求8：职业规范",
+          "indicator": "8-2 能够在计算机工程实践中理解伦理道德、遵守职业规范",
+          "course_goals": "目标2：1.0"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "毕业要求9：个人和团队",
+          "indicator": "9-1 在多学科背景下具有团队合作的意识。",
+          "course_goals": "目标3：1.0"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "毕业要求10：沟通",
+          "indicator": "10-1 能够就计算机复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "目标3：0.5 目标4：0.5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "毕业要求10：沟通",
+          "indicator": "10-2 能够就计算机复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "目标3：0.8 目标5：0.2"
+        }
+      ]
+    },
+    {
+      "table_title": "表 **2.** 课程目标与软件工程专业毕业要求对应关系",
+      "major": "软件工程",
+      "mappings": [
+        {
+          "requirement_number": "6",
+          "requirement": "毕业要求6：工程与社会",
+          "indicator": "6-2 能够理解在软件工程实践中应承担的社会、健康、安全、法律以及文化责任。",
+          "course_goals": "目标1：1.0"
+        },
+        {
+          "requirement_number": "8",
+          "requirement": "毕业要求8：职业规范",
+          "indicator": "8-2 能够在软件工程实践中理解伦理道德、遵守职业规范、履行社会责任。",
+          "course_goals": "目标2：1.0"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "毕业要求9：个人和团队",
+          "indicator": "9-1 在多学科背景下具有团队合作的意识。",
+          "course_goals": "目标3：1.0"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "毕业要求10：沟通",
+          "indicator": "10-1 能够就软件工程复杂工程问题撰写报告和设计文稿、陈述发言、清晰表达或回应指令。",
+          "course_goals": "目标3：0.5 目标4：0.5"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "毕业要求10：沟通",
+          "indicator": "10-2 能够就软件工程复杂工程问题与业界同行及社会公众进行有效沟通和交流。",
+          "course_goals": "目标3：0.8 目标5：0.2"
+        }
+      ]
+    },
+    {
+      "table_title": "表 **3.** 课程目标与计算机科学与技术（中外合作办学）毕业要求对应关系",
+      "major": "计算机科学与技术（中外合作办学）",
+      "mappings": [
+        {
+          "requirement_number": "6",
+          "requirement": "毕业要求6：工程与社会",
+          "indicator": "6",
+          "course_goals": "目标1：1.0"
+        },
+        {
+          "requirement_number": "8",
+          "requirement": "毕业要求8：职业规范",
+          "indicator": "8",
+          "course_goals": "目标2：1.0"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "毕业要求9：个人和团队",
+          "indicator": "9",
+          "course_goals": "目标3：1.0"
+        },
+        {
+          "requirement_number": "10",
+          "requirement": "毕业要求10：沟通",
+          "indicator": "10",
+          "course_goals": "目标3：0.8 目标5：0.2"
+        }
+      ]
+    }
+  ],
+  "course_relations": {
+    "prerequisite_courses": [
+      "需完成培养方案规定的所有专业课程"
+    ],
+    "subsequent_courses": [],
+    "description": ""
+  }
+}

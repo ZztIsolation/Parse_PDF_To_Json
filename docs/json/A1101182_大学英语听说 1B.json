@@ -1,0 +1,70 @@
+{
+  "file_name": "034_大学英语听说1B.md",
+  "processed_at": "2025-11-08 18:22:40",
+  "course_name": "大学英语听说 1B",
+  "course_code": "A1101182",
+  "course_goals": {
+    "overview": "《大学英语听说 1B》课程是一门英语听说技能训练课，是依据教育部颁发的《大学英语教学指南》以及杭州电子科技大学新制定的大学英语教学改革方案中提出的培养学生英语综合能力，特别是听说能力的教学目标，以及社会对大学生英语应用能力要求不断提高的形势下，面向非英语专业本科生开设的一门课程。该课程以教师为主导，通过",
+    "goals": []
+  },
+  "requirement_mappings": [
+    {
+      "table_title": "表 **2** 课程目标与毕业要求对应关系",
+      "major": "计算机科学与技术",
+      "mappings": [
+        {
+          "requirement_number": "8",
+          "requirement": "职业规范",
+          "indicator": "8-1 具有人文素养和社会责任感。",
+          "course_goals": "课程目标5（1.0）"
+        },
+        {
+          "requirement_number": "8",
+          "requirement": "职业规范",
+          "indicator": "8-2 具有兼容并蓄、求同存异的跨文化交际素养。",
+          "course_goals": "课程目标 5（1.0）"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "个人和团队",
+          "indicator": "9-1 在多学科背景下具有团队合作的意识。",
+          "course_goals": "课程目标2、3（1.0）"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "个人和团队",
+          "indicator": "9-2 能在团队合作中承担个体、团队成员及负责人的角色。",
+          "course_goals": "课程目标3（1.0）"
+        },
+        {
+          "requirement_number": "9",
+          "requirement": "个人和团队",
+          "indicator": "10-3 至少具备一门外语的应用能力，对计算机技术国际研究前沿有初步了解，能够在跨文化背景下进行沟通和交流。",
+          "course_goals": "课程目标1、2（1.0）"
+        },
+        {
+          "requirement_number": "12",
+          "requirement": "终身学习",
+          "indicator": "12-1 具有自主学习和终身学习的意识。",
+          "course_goals": "课程目标4（0.5）"
+        },
+        {
+          "requirement_number": "12",
+          "requirement": "终身学习",
+          "indicator": "12-2 有不断学习和适应发展的能力。",
+          "course_goals": "课程目标4（0.5）"
+        }
+      ]
+    }
+  ],
+  "course_relations": {
+    "prerequisite_courses": [],
+    "subsequent_courses": [
+      "大学英语听说 2B",
+      "大学英语精读 2B",
+      "英语文化类",
+      "技能类后续课程"
+    ],
+    "description": ""
+  }
+}
